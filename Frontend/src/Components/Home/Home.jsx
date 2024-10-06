@@ -7,6 +7,7 @@ import OurServices from "./OurServices.jsx";
 import OurStrength from "./OurStrength.jsx";
 import OurCustomers from "./OurCustomers.jsx";
 import OurCustomersMain from "./OurCustomersMain.jsx";
+import Footer from "../Utils/Footer.jsx";
 export default function Home() {
   return (
     <div className="bg-black">
@@ -45,6 +46,7 @@ export default function Home() {
       <OurStrength />
       <OurCustomers />
       <OurCustomersMain style={{ background: "white" }} />
+      <Footer />
     </div>
   );
 }
