@@ -5,7 +5,7 @@ import contactUs from "../../pictures/ConatactUs/Contact-us.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoenixFramework } from "@fortawesome/free-brands-svg-icons";
+
 import {
   faEnvelope,
   faLocationDot,

@@ -69,12 +69,16 @@ export default function Footer() {
             <div className="flex items-center gap-4 mt-4">
               <FontAwesomeIcon
                 icon={faLocationDot}
-                className="text-[#ce9233] text-lg "
+                className="text-[#ce9233] text-2xl "
               />
-              <p className="text-lg text-white">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Exercitationem, nostrum.
-              </p>
+              <div>
+                <p className="text-lg text-white">
+                  201/16, G.I.D.C, Estate, Panoli
+                </p>
+                <p className="text-lg text-white">
+                  Nr.Tema India, Tel.Ankleshwar. Dist.Bharuch, Gujrat, India
+                </p>
+              </div>
             </div>
             <p className="border-t border-[#ce9233] mt-4"></p>
             <div className="flex items-center gap-4 mt-4 ">
@@ -82,7 +86,10 @@ export default function Footer() {
                 icon={faPhone}
                 className="text-[#ce9233] text-lg "
               />
-              <p className="text-lg text-white">7878787878</p>
+              <div>
+                <p className="text-lg text-white"> +91 9879708224</p>
+                <p className="text-lg text-white"> +91 9909557874</p>
+              </div>
             </div>
             <p className="border-t border-[#ce9233] mt-4"></p>
             <div className="flex items-center gap-4 mt-4 ">
@@ -90,7 +97,7 @@ export default function Footer() {
                 icon={faEnvelope}
                 className="text-[#ce9233] text-lg "
               />
-              <p className="text-lg text-white">abc@gmail.com</p>
+              <p className="text-lg text-white"> weldwellengg@yahoo.com</p>
             </div>
             <p className="border-t border-[#ce9233] mt-4"></p>
           </div>
