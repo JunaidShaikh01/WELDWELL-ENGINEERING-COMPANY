@@ -1,4 +1,4 @@
-import product1 from "../../pictures/Products/ProductsImage/product1.jpg";
+import product1 from "../../pictures/Products/ProductsImage/Product1.jpg";
 const cardsData = [
   {
     id: 1,
