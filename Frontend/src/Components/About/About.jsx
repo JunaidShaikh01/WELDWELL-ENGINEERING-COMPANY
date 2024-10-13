@@ -40,12 +40,12 @@ export default function About() {
       <div className="h-[100vh] w-full py-10 px-10 flex gap-10  items-center justify-center overflow-hidden">
         <div className="h-[80%] w-[50%] relative" data-aos="fade-right">
           <img
-            className="absolute top-0 left-0 h-full w-full shadow-2xl object-cover"
+            className="absolute top-0 right-0 h-full w-full shadow-2xl object-cover"
             src={AboutHomeBanner2}
             alt="About Home Banner 2"
           />
           <img
-            className="absolute top-5 left-5 h-full w-full object-cover "
+            className="absolute  top-5 right-5 h-full w-full object-cover "
             src={AboutHomeBanner1}
             alt="About Home Banner 1"
           />

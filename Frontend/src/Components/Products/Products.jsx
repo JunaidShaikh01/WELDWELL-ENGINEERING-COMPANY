@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../Utils/Header";
 import Footer from "../Utils/Footer";
 import productBanner from "../../pictures/Products/Products-Banner.jpg";
@@ -10,7 +10,14 @@ import Button from "@mui/material/Button";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardActions from "@mui/material/CardActions";
 import cardsData from "./data";
+import AOS from "aos";
+import "aos/dist/aos.css";
 export default function Products() {
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+    });
+  }, []);
   return (
     <div>
       <Header />
@@ -35,15 +42,18 @@ export default function Products() {
           </div>
         </div>
       </div>
-      <div className="px-4 sm:px-8 md:px-10 lg:px-20 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div
+        className="px-4 sm:px-8 md:px-10 lg:px-20 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
+        data-aos="fade-up"
+      >
         {cardsData.map((product) => (
-          <Card key={product.id} sx={{ maxWidth: 345 }}>
+          <Card key={product.id} sx={{ maxWidth: 345 }} data-aos="fade-up">
             <CardActionArea>
               <CardMedia
                 component="img"
                 height="140"
-                image={product.image} // Use product.image from data.js
-                alt={product.title} // Use product title as alt text
+                image={product.image}
+                alt={product.title}
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -56,12 +66,9 @@ export default function Products() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button size="small" color="primary">
-                Share
-              </Button>
-              <Button size="small" color="primary">
-                Learn More
-              </Button>
+              <button className="border border-[#ce9233] text-[#ce9233] text-lg shadow-lg py-2 px-4 rounded transition-all duration-300 hover:bg-[#ce9233] hover:text-white cursor-pointer">
+                View More
+              </button>
             </CardActions>
           </Card>
         ))}
