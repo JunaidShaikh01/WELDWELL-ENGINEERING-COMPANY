@@ -51,13 +51,13 @@ export default function Home() {
       </div>
 
       {/* Responsive Components */}
-      {/* <AboutUs />
+      <AboutUs />
       <OurServices />
       <OurStrength />
       <OurCustomers />
       <OurCustomersMain />
-      */}
- <Footer /> 
+
+      <Footer />
     </div>
   );
 }

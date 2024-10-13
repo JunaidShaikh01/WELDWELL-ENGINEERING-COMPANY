@@ -23,24 +23,31 @@ export default function Contact() {
       <div className="relative ">
         <img
           src={contactUs}
-          className="h-[85vh] w-full object-fill"
+          className="h-[60vh] sm:h-[70vh] lg:h-[85vh] w-full object-cover"
           alt="Banner"
         />
-        <div className="absolute inset-0 flex items-center justify-start bg-black  opacity-70 z-10 px-40 gap-4 overflow-hidden">
-          <div className="h-[80%] w-10 bg-amber-700" data-aos="fade-down"></div>
-          <div className="flex flex-col gap-3 w-[100%]" data-aos="fade-left">
-            <h1 className="text-amber-700 text-6xl font-bold z-100 uppercase ">
+        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-70 z-10 px-6 sm:px-20 md:px-32 lg:px-40 gap-4">
+          <div
+            className="h-[60%] sm:h-[80%] w-5 sm:w-10 bg-amber-800"
+            data-aos="fade-down"
+          ></div>
+          <div
+            className="flex flex-col gap-3 sm:gap-7 w-full"
+            data-aos="fade-left"
+          >
+            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl text-amber-700 font-bold uppercase">
               Contact
             </h1>
-            <span className="text-white text-6xl font-bold z-100 uppercase">
+            <span className="text-white text-3xl sm:text-4xl md:text-5xl font-bold uppercase">
               Us
             </span>
-            <span className="text-white text-4xl font-bold z-100 uppercase">
+            <span className="text-white text-xl sm:text-2xl md:text-4xl font-bold uppercase">
               WELDWELL ENGINEERING COMPANY
             </span>
           </div>
         </div>
       </div>
+
       <div className="w-full flex px-4 mt-16 gap-8 overflow-hidden">
         <div className="map w-[65%] bg-yellow-200 mb-8" data-aos="fade-right">
           <iframe
