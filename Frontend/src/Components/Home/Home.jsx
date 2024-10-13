@@ -56,7 +56,8 @@ export default function Home() {
       <OurStrength />
       <OurCustomers />
       <OurCustomersMain />
-      <Footer /> */}
+      */}
+ <Footer /> 
     </div>
   );
 }
