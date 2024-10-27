@@ -6,6 +6,13 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false); // State to control menu
   const location = useLocation();
 
+  const handleLinkClick = (path) => {
+    // Close the menu
+    setIsOpen(false);
+    // Scroll to top
+    window.scrollTo(0, 0);
+  };
+
   const variants = {
     open: {
       opacity: 1,
@@ -76,6 +83,7 @@ export default function Header() {
               className={`${
                 location.pathname === path ? "text-[#ce9233]" : "text-white"
               } transition-colors duration-300 ease-in-out font-oswald`}
+              onClick={() => handleLinkClick(path)} // Scroll to top on click
             >
               {path === "/"
                 ? "Home"
@@ -142,7 +150,7 @@ export default function Header() {
                 className={`${
                   location.pathname === path ? "text-[#ce9233]" : "text-white"
                 } transition-colors duration-300 ease-in-out font-oswald`}
-                onClick={() => setIsOpen(false)} // Close the menu when a link is clicked
+                onClick={() => handleLinkClick(path)} // Scroll to top on click
               >
                 {path === "/"
                   ? "Home"
