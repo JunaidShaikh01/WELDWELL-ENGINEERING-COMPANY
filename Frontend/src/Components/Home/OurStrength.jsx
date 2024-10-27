@@ -26,7 +26,7 @@ export default function OurStrength() {
       </div>
 
       {/* Strength Items Section */}
-      <div className="flex flex-col md:flex-row mt-10 gap-4">
+      <div className="flex flex-col md:flex-row mt-10 gap-4 md:gap-0">
         {/* Item 1 */}
         <div className="flex w-full  md:w-1/2 text-white" data-aos="fade-right">
           <div className="flex w-full flex-col md:flex-row">
@@ -61,7 +61,7 @@ export default function OurStrength() {
         </div>
       </div>
 
-      <div className="flex flex-col mt-2 md:mt-0 md:flex-row gap-4">
+      <div className="flex flex-col mt-2 md:mt-0 md:flex-row gap-4 md:gap-0">
         {/* Item 3 */}
         <div className="flex w-full md:w-1/2 text-white" data-aos="fade-right">
           <div className="flex w-full flex-col md:flex-row">
