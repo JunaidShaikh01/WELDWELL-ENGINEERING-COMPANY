@@ -22,35 +22,37 @@ export default function Home() {
       <Header />
 
       {/* Responsive Banner Section */}
-      <div className="relative">
+      <div className="relative ">
         <img
           src={homeBanner}
           className="h-[60vh] sm:h-[70vh] lg:h-[85vh] w-full object-cover"
           alt="Banner"
         />
-        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-70 z-10 px-6 sm:px-20 md:px-32 lg:px-40 gap-4">
+
+        {/* Banner Text Overlay */}
+        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-70 z-10 px-6 sm:px-12 md:px-20 lg:px-40 gap-4">
           <div
-            className="h-[60%] sm:h-[80%] w-5 sm:w-10 bg-amber-800"
+            className="h-[50%] sm:h-[70%] lg:h-[80%] w-4 sm:w-6 lg:w-10 bg-amber-800"
             data-aos="fade-down"
           ></div>
+
           <div
-            className="flex flex-col gap-3 sm:gap-7 w-full"
+            className="flex flex-col gap-2 sm:gap-4 lg:gap-6 w-full max-w-2xl"
             data-aos="fade-left"
           >
-            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl text-amber-700 font-bold">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-amber-700 font-bold">
               We
             </h1>
-            <span className="text-white text-2xl sm:text-3xl md:text-5xl font-bold">
+            <span className="text-white text-lg sm:text-2xl md:text-4xl font-bold">
               Are the Best Manufacturer Of
             </span>
-            <span className="text-white text-3xl sm:text-5xl md:text-7xl font-bold">
-              Welding Machine
+            <span className="text-white text-xl sm:text-3xl md:text-5xl font-bold">
+              Welding Machines
             </span>
           </div>
         </div>
       </div>
 
-      {/* Responsive Components */}
       <AboutUs />
       <OurServices />
       <OurStrength />

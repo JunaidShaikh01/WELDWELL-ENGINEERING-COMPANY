@@ -5,72 +5,82 @@ import OutStrength3 from "../../pictures/Home/OurStrength/OurStrength-banner-3.j
 import OutStrength4 from "../../pictures/Home/OurStrength/OurStrength-banner-4.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 export default function OurStrength() {
   useEffect(() => {
     AOS.init({
       duration: 3000,
     });
   }, []);
+
   return (
-    <div>
+    <div className="px-4 md:px-10 lg:px-40">
+      {/* Title Section */}
       <div className="text-white text-center uppercase mt-20">
-        <h1 className=" text-6xl z-100 mb-2 font-extrabold">
-          Our <span className="text-[#ce9233]">Strength</span>{" "}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl z-100 mb-2 font-extrabold">
+          Our <span className="text-[#ce9233]">Strength</span>
         </h1>
-        <p className="text-xl font-bold " style={{ letterSpacing: "0.1em" }}>
+        <p className="text-xl font-bold" style={{ letterSpacing: "0.1em" }}>
           WELDWELL ENGINEERING COMPANY
         </p>
       </div>
-      <div className="flex  w-[100%] px-40 mt-10">
-        <div className="  text-white w-[50%]" data-aos="fade-right">
-          <div className="flex ">
-            <div className="w-[20vw] bg-[#2b2c2e] flex flex-col items-center justify-center text-center">
-              <h1 className="bg-[#2b2c2e] text-2xl font-extrabold">
-                <span className="text-[#ce9233] bg-[#2b2c2e]">Our</span>{" "}
-                Strength
+
+      {/* Strength Items Section */}
+      <div className="flex flex-col md:flex-row mt-10 gap-4">
+        {/* Item 1 */}
+        <div className="flex w-full  md:w-1/2 text-white" data-aos="fade-right">
+          <div className="flex w-full flex-col md:flex-row">
+            <div className="flex flex-col items-center w-full justify-center text-center md:w-1/2 bg-[#2b2c2e] p-4">
+              <h1 className="text-2xl font-extrabold">
+                <span className="text-[#ce9233]">Our</span> Strength
               </h1>
-              <p className="bg-[#2b2c2e] px-2">
+              <p className="px-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
                 saepe.
               </p>
             </div>
-            <img src={OutStrength1} className="w-[20vw] h-[20vw]" />
+            <img src={OutStrength1} className="w-full md:w-1/2 h-auto" alt="Strength 1" />
           </div>
         </div>
-        <div className=" text-white w-[50%]" data-aos="fade-left">
-          <div className="flex ">
-            <div className="w-[20vw] bg-[#ce9233] flex flex-col items-center justify-center text-center">
-              <h1 className="bg-[#ce9233] text-2xl font-extrabold">
-                <span className="text-[#2b2c2e] bg-[#ce9233]">Our</span>{" "}
-                Strength
+
+        {/* Item 2 */}
+        <div className="flex w-full md:w-1/2 text-white" data-aos="fade-left">
+          <div className="flex flex-col md:flex-row w-full">
+            
+            <div className="flex flex-col items-center justify-center text-center  w-full md:w-1/2 bg-[#ce9233] p-4">
+              <h1 className="text-2xl font-extrabold">
+                <span className="text-[#2b2c2e]">Our</span> Strength
               </h1>
-              <p className="bg-[#ce9233] px-2">
+              <p className="px-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
                 nulla.
               </p>
             </div>
-            <img src={OutStrength2} className="w-[20vw] h-[20vw]" />
+            <img src={OutStrength2} className="w-full md:w-1/2 h-auto" alt="Strength 2" />
           </div>
         </div>
       </div>
-      <div className="flex w-[100%]  px-40 ">
-        <div className="w-[50%] text-white" data-aos="fade-right">
-          <div className="flex  ">
-            <img src={OutStrength3} className="w-[20vw] h-[20vw]" />
-            <div className="w-[20vw] bg-[#2b2c2e] flex flex-col items-center justify-center text-center">
-              <h1 className="bg-[#2b2c2e] text-2xl font-extrabold">
-                <span className="text-[#ce9233] bg-[#2b2c2e]">Our</span>{" "}
-                Strength
+
+      <div className="flex flex-col mt-2 md:mt-0 md:flex-row gap-4">
+        {/* Item 3 */}
+        <div className="flex w-full md:w-1/2 text-white" data-aos="fade-right">
+          <div className="flex w-full flex-col md:flex-row">
+            <img src={OutStrength3} className="w-full md:w-1/2 h-auto" alt="Strength 3" />
+            <div className="flex flex-col items-center justify-center text-center w-full md:w-1/2 bg-[#2b2c2e] p-4">
+              <h1 className="text-2xl font-extrabold">
+                <span className="text-[#ce9233]">Our</span> Strength
               </h1>
-              <p className="bg-[#2b2c2e] px-2">
+              <p className="px-2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut,
                 incidunt?
               </p>
             </div>
           </div>
         </div>
-        <div className="w-[50%] " data-aos="fade-left">
-          <img src={OutStrength4} className="h-[20vw]" />
+
+        {/* Item 4 */}
+        <div className="flex w-full md:w-1/2" data-aos="fade-left">
+          <img src={OutStrength4} className="w-full h-auto" alt="Strength 4" />
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -19,11 +19,11 @@ import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 function OurCustomersMain() {
   return (
     <div className="swiper-container-wrapper">
-      <div className="text-white text-center uppercase mt-20">
-        <h1 className=" text-6xl z-100 mb-2 font-extrabold">
-          Our <span className="text-[#ce9233]">CUSTOMERS</span>{" "}
+      <div className="text-white text-center uppercase mt-10 md:mt-20">
+        <h1 className="text-4xl md:text-6xl z-100 mb-2 font-extrabold">
+          Our <span className="text-[#ce9233]">CUSTOMERS</span>
         </h1>
-        <p className="text-xl font-bold " style={{ letterSpacing: "0.1em" }}>
+        <p className="text-lg md:text-xl font-bold" style={{ letterSpacing: "0.1em" }}>
           WELDWELL ENGINEERING COMPANY
         </p>
       </div>
@@ -48,72 +48,66 @@ function OurCustomersMain() {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="custructionCumpanies">
-            <img src={ourCustomer1} alt="ourCustomer1" />
-            <div className="text-white bg-[#ce9233] h-[15vh]">
-              <h1 className="text-2xl font-bold text-center">
-                <span className="text-[#2b2c2e]">Cunstruction</span> Campanies
+          <div className="relative">
+            <img src={ourCustomer1} alt="Construction Companies" className="w-full h-auto md:h-[40vh] lg:h-[50vh]" />
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] h-[15vh] flex flex-col justify-center">
+              <h1 className="text-lg md:text-2xl font-bold text-center">
+                <span className="text-[#2b2c2e]">Construction</span> Companies
               </h1>
-              <p className="text-center text-md">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-                distinctio.
+              <p className="text-sm md:text-md text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, distinctio.
               </p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="carManufacturar">
-            <img src={ourCustomer2} alt="ourCustomer2" />
-            <div className="text-white bg-[#2b2c2e] h-[15vh]">
-              <h1 className="text-2xl font-bold text-center">
-                <span className="text-[#ce9233]">Car</span> Manufacturar
+          <div className="relative">
+            <img src={ourCustomer2} alt="Car Manufacturer" className="w-full h-auto md:h-[40vh] lg:h-[50vh]" />
+            <div className="absolute bottom-0 left-0 right-0 bg-[#2b2c2e] h-[15vh] flex flex-col justify-center">
+              <h1 className="text-lg md:text-2xl font-bold text-center">
+                <span className="text-[#ce9233]">Car</span> Manufacturer
               </h1>
-              <p className="text-md text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consectetur, aut!
+              <p className="text-sm md:text-md text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aut!
               </p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="Electrical Manufacturing">
-            <img src={ourCustomer3} alt="ourCustomer3" />
-            <div className="text-white bg-[#ce9233] h-[15vh]">
-              <h1 className="text-2xl font-bold text-center">
-                <span className="text-[#2b2c2e]">Electronics</span>
-                Manufacturing
+          <div className="relative">
+            <img src={ourCustomer3} alt="Electrical Manufacturing" className="w-full h-auto md:h-[40vh] lg:h-[50vh]" />
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] h-[15vh] flex flex-col justify-center">
+              <h1 className="text-lg md:text-2xl font-bold text-center">
+                <span className="text-[#2b2c2e]">Electronics</span> Manufacturing
               </h1>
-              <p className="text-md text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Similique, tempora?
+              <p className="text-sm md:text-md text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, tempora?
               </p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="shipBuilding">
-            <img src={ourCustomer4} alt="ourCustomer4" />
-            <div className="text-white bg-[#2b2c2e] h-[15vh]">
-              <h1 className="text-2xl font-bold text-center">
+          <div className="relative">
+            <img src={ourCustomer4} alt="Ship Building" className="w-full h-auto md:h-[40vh] lg:h-[50vh]" />
+            <div className="absolute bottom-0 left-0 right-0 bg-[#2b2c2e] h-[15vh] flex flex-col justify-center">
+              <h1 className="text-lg md:text-2xl font-bold text-center">
                 <span className="text-[#ce9233]">Ship</span> Building
               </h1>
-              <p className="text-md text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repudiandae, impedit.
+              <p className="text-sm md:text-md text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, impedit.
               </p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="steelManufacturing">
-            <img src={ourCustomer5} alt="ourCustomer5" />
-            <div className="text-white bg-[#ce9233]  h-[15vh]">
-              <h1 className="text-2xl font-bold text-center">
+          <div className="relative">
+            <img src={ourCustomer5} alt="Steel Manufacturing" className="w-full h-auto md:h-[40vh] lg:h-[50vh]" />
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] h-[15vh] flex flex-col justify-center">
+              <h1 className="text-lg md:text-2xl font-bold text-center">
                 <span className="text-[#2b2c2e]">Steel</span> Manufacturing
               </h1>
-              <p className="text-md text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-                iusto.
+              <p className="text-sm md:text-md text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, iusto.
               </p>
             </div>
           </div>
