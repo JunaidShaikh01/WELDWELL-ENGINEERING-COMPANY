@@ -25,19 +25,22 @@ export default function About() {
           className="h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh] w-full object-cover" // Adjusted heights for responsive
           alt="Banner"
         />
-        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-70 z-10 px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
-        <div className="h-[60%] sm:h-[80%] w-5 sm:w-10 bg-amber-800" data-aos="fade-down"></div>
+        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-80 z-10 px-4 sm:px-10 md:px-20 lg:px-32 xl:px-40 gap-2 sm:gap-4 md:gap-6 lg:gap-8">
+          <div
+            className="h-[60%] sm:h-[80%] w-5 sm:w-10 bg-amber-800"
+            data-aos="fade-down"
+          ></div>
           <div
             className="flex flex-col gap-2 sm:gap-3 md:gap-4 lg:gap-5 w-full"
             data-aos="fade-left"
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-amber-700 font-bold uppercase">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl text-amber-700 font-bold uppercase">
               About
             </h1>
-            <span className="text-white text-4xl sm:text-2xl md:text-3xl font-bold uppercase">
+            <span className="text-white text-3xl sm:text-4xl md:text-5xl font-bold uppercase">
               Us
             </span>
-            <span className="text-white text-lg sm:text-lg md:text-2xl font-bold uppercase">
+            <span className="text-white text-xl sm:text-2xl md:text-4xl font-bold uppercase">
               WELDWELL ENGINEERING COMPANY
             </span>
           </div>

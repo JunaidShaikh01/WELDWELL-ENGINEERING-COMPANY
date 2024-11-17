@@ -23,7 +23,7 @@ export default function Contact() {
           className="h-[60vh] sm:h-[70vh] lg:h-[85vh] w-full object-cover"
           alt="Banner"
         />
-        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-70 z-10 px-6 sm:px-20 md:px-32 lg:px-40 gap-4">
+        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-80 z-10 px-6 sm:px-20 md:px-32 lg:px-40 gap-4">
           <div className="h-[60%] sm:h-[80%] w-5 sm:w-10 bg-amber-800" data-aos="fade-down"></div>
           <div className="flex flex-col gap-3 sm:gap-7 w-full" data-aos="fade-left">
             <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl text-amber-700 font-bold uppercase">Contact</h1>

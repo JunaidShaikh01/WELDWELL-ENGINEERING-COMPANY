@@ -30,9 +30,9 @@ export default function Home() {
         />
 
         {/* Banner Text Overlay */}
-        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-70 z-10 px-6 sm:px-12 md:px-20 lg:px-40 gap-4">
+        <div className="absolute inset-0 flex items-center justify-start bg-black opacity-80 z-10 px-6 sm:px-12 md:px-20 lg:px-40 gap-4">
           <div
-            className="h-[50%] sm:h-[70%] lg:h-[80%] w-4 sm:w-6 lg:w-10 bg-amber-800"
+            className="h-[50%] sm:h-[70%] lg:h-[80%] w-4 sm:w-6 lg:w-10 bg-amber-800 "
             data-aos="fade-down"
           ></div>
 
