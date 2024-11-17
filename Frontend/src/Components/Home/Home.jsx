@@ -40,13 +40,13 @@ export default function Home() {
             className="flex flex-col gap-2 sm:gap-4 lg:gap-6 w-full max-w-2xl"
             data-aos="fade-left"
           >
-            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-amber-700 font-bold">
+            <h1 className="text-3xl uppercase sm:text-5xl md:text-7xl lg:text-8xl text-amber-700 font-bold">
               We
             </h1>
-            <span className="text-white text-lg sm:text-2xl md:text-4xl font-bold">
+            <span className="text-white uppercase  text-xl sm:text-2xl md:text-4xl font-bold">
               Are the Best Manufacturer Of
             </span>
-            <span className="text-white text-xl sm:text-3xl md:text-5xl font-bold">
+            <span className="text-white uppercase text-xl sm:text-3xl md:text-5xl font-bold">
               Welding Machines
             </span>
           </div>
