@@ -117,14 +117,14 @@ export default function Products() {
               <motion.button
                 whileHover={{ scale: 1.2 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="absolute text-[#ce9233]  top-0 right-1 sm:top-2 sm:right-2 text-lg sm:text-2xl "
+                className="absolute text-[#ce9233]  top-0 right-2 sm:top-2 sm:right-2 text-lg sm:text-2xl "
                 onClick={closeModal}
               >
                 ✖
               </motion.button>
 
               {/* Image Section */}
-              <div className="flex w-full  h-full flex-col sm:flex-row items-center gap-2 lg:gap-5 ">
+              <div className="flex w-full  h-full flex-col sm:flex-row items-center gap-2 lg:gap-5 mt-2 sm:mt-0 ">
                 <div className="flex justify-center w-full sm:w-1/2 pt-2.5">
                   <img
                     src={selectedProduct?.image}
@@ -143,7 +143,7 @@ export default function Products() {
                         "More details coming soon!"}
                     </p>
                     {/* <p className="hidden sm:block text-white text-sm sm:text-base"> */}
-                    <p className="text-white h-[15vh] text-sm sm:text-base  sm:h-full overflow-hidden overflow-y-auto">
+                    <p className="text-white h-[18vh] text-sm sm:text-base  sm:h-full overflow-hidden overflow-y-auto">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quas similique adipisci omnis veniam nisi natus, neque
                       nostrum quasi dicta perferendis placeat aspernatur aliquam
@@ -154,7 +154,7 @@ export default function Products() {
                     </p>
                   </div>
                   {/* Extra Image Section */}
-                  <div className="extraImageDivision flex  justify-start flex-wrap gap-2 px-4 sm:px-0">
+                  <div className="extraImageDivision flex  justify-start flex-wrap gap-2 px-4 sm:px-0 mt-3 SM:mt-0">
                     {Array.from({ length: 5 }).map((_, index) => (
                       <motion.img
                         whileHover={{ scale: 1.2 }}
