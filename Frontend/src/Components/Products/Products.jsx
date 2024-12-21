@@ -11,6 +11,7 @@ import CardActions from "@mui/material/CardActions";
 import cardsData from "./data";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Products() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -97,20 +98,81 @@ export default function Products() {
           ))}
         </div>
       </div>
-      {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg p-6 w-[90%] sm:w-[60%] md:w-[50%] lg:w-[40%] relative">
-            <button
-              className="absolute top-2 right-2 bg-red-600 text-white rounded-full p-2"
-              onClick={closeModal}
+
+      <AnimatePresence>
+        {isModalOpen && (
+          <motion.div
+            className="fixed inset-0 bg-[#2b2c2e] bg-opacity-50 flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <motion.div
+              className="bg-black rounded-lg p-2 lg:p-6 w-[95%] sm:w-[60%] md:w-[50%] lg:w-[70%] relative h-[95vh] sm:h-[80vh]"
+              initial={{ y: "-100vh", opacity: 0 }}
+              animate={{ y: "0", opacity: 1 }}
+              exit={{ y: "100vh", opacity: 0 }}
+              transition={{ type: "spring", stiffness: 120 }}
             >
-              ✖
-            </button>
-            <h2 className="text-xl font-bold mb-4">{selectedProduct?.title}</h2>
-            <p>{selectedProduct?.description || "More details coming soon!"}</p>
-          </div>
-        </div>
-      )}
+              <motion.button
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 300 }}
+                className="absolute text-[#ce9233]  top-0 right-1 sm:top-2 sm:right-2 text-lg sm:text-2xl "
+                onClick={closeModal}
+              >
+                ✖
+              </motion.button>
+
+              {/* Image Section */}
+              <div className="flex w-full  h-full flex-col sm:flex-row items-center gap-2 lg:gap-5 ">
+                <div className="flex justify-center w-full sm:w-1/2 pt-2.5">
+                  <img
+                    src={selectedProduct?.image}
+                    className="h-[50vh] w-[80vw] sm:h-[70vh] sm:w-[40vw] rounded-lg object-cover"
+                    alt=""
+                  />
+                </div>
+                {/* Details Section */}
+                <div className="flex flex-col-reverse lg:flex-col justify-between w-full sm:w-1/2 gap-2 lg:gap-4 ">
+                  <div className="titleSection px-4 sm:px-0">
+                    <h2 className="text-2xl sm:text-4xl font-bold mb-1 lg:mb-4 text-white text-left">
+                      {selectedProduct?.title}
+                    </h2>
+                    <p className="text-sm sm:text-base text-slate-400">
+                      {selectedProduct?.description ||
+                        "More details coming soon!"}
+                    </p>
+                    {/* <p className="hidden sm:block text-white text-sm sm:text-base"> */}
+                    <p className="text-white h-[15vh] text-sm sm:text-base  sm:h-full overflow-hidden overflow-y-auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quas similique adipisci omnis veniam nisi natus, neque
+                      nostrum quasi dicta perferendis placeat aspernatur aliquam
+                      illo tempore impedit recusandae in voluptate cum
+                      reprehenderit ex eveniet quos ratione? Aut excepturi,
+                      labore voluptatibus eligendi minima corrupti rem
+                      quibusdam, voluptate, fugit magnam corporis beatae cumque.
+                    </p>
+                  </div>
+                  {/* Extra Image Section */}
+                  <div className="extraImageDivision flex  justify-start flex-wrap gap-2 px-4 sm:px-0">
+                    {Array.from({ length: 5 }).map((_, index) => (
+                      <motion.img
+                        whileHover={{ scale: 1.2 }}
+                        transition={{ type: "spring", stiffness: 200 }}
+                        key={index}
+                        src={selectedProduct?.image}
+                        className="h-[7vh]  sm:h-[13vh] w-[10vw] sm:w-auto rounded-md object-cover"
+                        alt={`Extra image ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       <Footer />
     </div>
   );
