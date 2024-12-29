@@ -108,7 +108,7 @@ export default function Products() {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-black rounded-lg p-2 lg:p-6 w-[95%] sm:w-[60%] md:w-[50%] lg:w-[70%] relative h-[95vh] sm:h-[80vh]"
+              className="bg-black rounded-lg p-2 lg:p-6 w-[90%] sm:w-[60%] md:w-[50%] lg:w-[70%] relative h-[75vh] sm:h-[80vh]"
               initial={{ y: "-100vh", opacity: 0 }}
               animate={{ y: "0", opacity: 1 }}
               exit={{ y: "100vh", opacity: 0 }}
@@ -128,13 +128,13 @@ export default function Products() {
                 <div className="flex justify-center w-full sm:w-1/2 pt-2.5">
                   <img
                     src={selectedProduct?.image}
-                    className="h-[50vh] w-[80vw] sm:h-[70vh] sm:w-[40vw] rounded-lg object-cover"
+                    className="h-[75%] w-[80vw] sm:h-[70vh] sm:w-[40vw] rounded-lg object-cover"
                     alt=""
                   />
                 </div>
                 {/* Details Section */}
-                <div className="flex flex-col-reverse lg:flex-col justify-between w-full sm:w-1/2 gap-2 lg:gap-4 ">
-                  <div className="titleSection px-4 sm:px-0">
+                <div className="flex h-[35%] flex-col-reverse  lg:flex-col justify-between  w-full sm:w-1/2 gap-2 lg:gap-4 ">
+                  <div className="titleSection  px-4 sm:px-0">
                     <h2 className="text-2xl sm:text-4xl font-bold mb-1 lg:mb-4 text-white text-left">
                       {selectedProduct?.title}
                     </h2>
@@ -143,7 +143,7 @@ export default function Products() {
                         "More details coming soon!"}
                     </p>
                     {/* <p className="hidden sm:block text-white text-sm sm:text-base"> */}
-                    <p className="text-white h-[18vh] text-sm sm:text-base  sm:h-full overflow-hidden overflow-y-auto">
+                    <p className="text-white h-[18vh]  text-sm sm:text-base  sm:h-full overflow-hidden overflow-y-auto">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Quas similique adipisci omnis veniam nisi natus, neque
                       nostrum quasi dicta perferendis placeat aspernatur aliquam
