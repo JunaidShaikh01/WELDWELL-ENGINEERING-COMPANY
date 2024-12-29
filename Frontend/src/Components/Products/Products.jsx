@@ -108,7 +108,7 @@ export default function Products() {
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-black rounded-lg p-2 lg:p-6 w-[90%] sm:w-[60%] md:w-[50%] lg:w-[70%] relative h-[75vh] sm:h-[80vh]"
+              className="bg-black rounded-lg p-2 lg:p-6 w-[90%] sm:w-[60%] md:w-[50%] lg:w-[70%] relative h-[80vh] sm:h-[80vh]"
               initial={{ y: "-100vh", opacity: 0 }}
               animate={{ y: "0", opacity: 1 }}
               exit={{ y: "100vh", opacity: 0 }}
@@ -128,7 +128,7 @@ export default function Products() {
                 <div className="flex justify-center w-full sm:w-1/2 pt-2.5">
                   <img
                     src={selectedProduct?.image}
-                    className="h-[75%] w-[80vw] sm:h-[70vh] sm:w-[40vw] rounded-lg object-cover"
+                    className="h-[75%] w-[80vw] sm:h-[70vh] sm:w-[40vw] rounded-lg object-cover "
                     alt=""
                   />
                 </div>
