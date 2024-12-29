@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 export default function OurStrength() {
   useEffect(() => {
     AOS.init({
-      duration: 2500, // Animation duration
+      duration: 1000, // Animation duration
       offset: 100,    // Offset value for triggering animations
       once: true,     // Animation runs only once
     });

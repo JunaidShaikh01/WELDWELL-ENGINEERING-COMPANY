@@ -31,6 +31,18 @@ body {
   display: block;
   width: 100%;
 }
+
+.swiper-pagination-bullet {
+  background-color: #343537; /* Default bullet color */
+  opacity: 0.7;
+}
+
 .swiper-pagination-bullet-active {
-  background-color: #ce9233; /* Active bullet color (e.g., Tomato) */
+  background-color: #ce9233; 
+  opacity: 1;
+  scale: 1.2;
+}
+
+.swiper-pagination {
+  bottom: 20px !important; /* Adjust position if needed */
 }
