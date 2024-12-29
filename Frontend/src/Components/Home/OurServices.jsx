@@ -12,7 +12,7 @@ export default function OurServices() {
 
   return (
     <div
-      className="bg-fixed bg-cover bg-center min-h-screen relative overflow-scroll"
+      className="bg-fixed bg-cover bg-center min-h-screen relative overflow-hidden sm:overflow-auto"
       style={{ backgroundImage: `url(${AboutHomeBanner1})` }}
     >
       {/* Black Overlay */}

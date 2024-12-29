@@ -50,11 +50,11 @@ function OurCustomersMain() {
         <SwiperSlide>
           <div className="relative h-[55vh] md:h-[70vh] overflow-hidden">
             <img src={ourCustomer1} alt="Construction Companies" className="w-full h-[35vh] md:h-[40vh] lg:h-[50vh] object-cover" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] h-[20vh] flex flex-col justify-center">
-              <h1 className="text-lg md:text-2xl font-bold text-center">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] gap-2 h-[20vh] flex flex-col justify-center">
+              <h1 className="text-xl md:text-2xl font-bold text-center">
                 <span className="text-[#2b2c2e]">Construction</span> <span className="text-white">Companies</span> 
               </h1>
-              <p className="text-sm md:text-md text-center text-[#343537]">
+              <p className="text-lg  md:text-md text-center text-[#343537]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, distinctio.
               </p>
             </div>
@@ -63,11 +63,11 @@ function OurCustomersMain() {
         <SwiperSlide>
           <div className="relative h-[55vh] md:h-[70vh] overflow-hidden">
             <img src={ourCustomer2} alt="Car Manufacturer" className="w-full h-[35vh] md:h-[40vh] lg:h-[50vh] object-cover" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2b2c2e] h-[20vh] flex flex-col justify-center">
-              <h1 className="text-lg md:text-2xl font-bold text-center">
+            <div className="absolute bottom-0 left-0 right-0 gap-2 bg-[#2b2c2e] h-[20vh] flex flex-col justify-center">
+              <h1 className="text-xl md:text-2xl font-bold text-center">
                 <span className="text-[#ce9233]">Car</span>  Manufacturer
               </h1>
-              <p className="text-sm md:text-md text-center text-[#b8832e]">
+              <p className="text-lg md:text-md text-center text-[#b8832e]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aut!
               </p>
             </div>
@@ -76,11 +76,11 @@ function OurCustomersMain() {
         <SwiperSlide>
           <div className="relative h-[55vh] md:h-[70vh] overflow-hidden">
             <img src={ourCustomer3} alt="Electrical Manufacturing" className="w-full h-[35vh] md:h-[40vh] lg:h-[50vh] object-cover" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] h-[20vh] flex flex-col justify-center">
-              <h1 className="text-lg md:text-2xl font-bold text-center">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] gap-2 h-[20vh] flex flex-col justify-center">
+              <h1 className="text-xl md:text-2xl font-bold text-center">
                 <span className="text-[#2b2c2e]">Electronics</span> <span className="text-white">Manufacturing</span> 
               </h1>
-              <p className="text-sm md:text-md text-center text-[#343537]">
+              <p className="text-lg px-4 md:text-md text-center text-[#343537]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, tempora?
               </p>
             </div>
@@ -89,11 +89,11 @@ function OurCustomersMain() {
         <SwiperSlide>
           <div className="relative h-[55vh] md:h-[70vh] overflow-hidden">
             <img src={ourCustomer4} alt="Ship Building" className="w-full h-[35vh] md:h-[40vh] lg:h-[50vh] object-cover" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#2b2c2e] h-[20vh] flex flex-col justify-center">
-              <h1 className="text-lg md:text-2xl font-bold text-center ">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#2b2c2e] gap-2 h-[20vh] flex flex-col justify-center">
+              <h1 className="text-xl md:text-2xl font-bold text-center ">
                 <span className="text-[#ce9233]">Ship</span> Building
               </h1>
-              <p className="text-sm md:text-md text-center text-[#b8832e]">
+              <p className="text-lg md:text-md text-center text-[#b8832e]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, impedit.
               </p>
             </div>
@@ -102,11 +102,11 @@ function OurCustomersMain() {
         <SwiperSlide>
           <div className="relative h-[55vh] md:h-[70vh] overflow-hidden">
             <img src={ourCustomer5} alt="Steel Manufacturing" className="w-full h-[35vh] md:h-[40vh] lg:h-[50vh] object-cover" />
-            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] h-[20vh] flex flex-col justify-center">
-              <h1 className="text-lg md:text-2xl font-bold text-center">
+            <div className="absolute bottom-0 left-0 right-0 bg-[#ce9233] gap-2 h-[20vh] flex flex-col justify-center">
+              <h1 className="text-xl md:text-2xl font-bold text-center">
                 <span className="text-[#2b2c2e]">Steel</span>  <span className="text-white">Manufacturing</span>
               </h1>
-              <p className="text-sm md:text-md text-center text-[#343537]">
+              <p className="text-lg md:text-md text-center text-[#343537]">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, iusto.
               </p>
             </div>

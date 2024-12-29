@@ -34,7 +34,7 @@ function OurCustomers() {
   return (
     <div
       ref={sectionRef}
-      className="relative min-h-screen bg-fixed bg-cover bg-center"
+      className="relative min-h-screen md:h-[40vh`] flex items-center flex-col md:flex-row  bg-fixed bg-cover bg-center"
       style={{ backgroundImage: `url(${OurCustomersBanner})` }}
     >
       {/* Black overlay */}
