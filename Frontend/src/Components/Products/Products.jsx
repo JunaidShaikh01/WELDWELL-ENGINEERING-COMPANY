@@ -43,7 +43,7 @@ export default function Products() {
             className="h-[60vh] sm:h-[70vh] lg:h-[85vh] w-full object-cover"
             alt="Banner"
           />
-          <div className="absolute inset-0 flex items-center justify-start bg-black opacity-80 z-10 px-6 sm:px-20 md:px-32 lg:px-40 gap-4">
+          <div className="absolute inset-0 flex items-center justify-center bg-black opacity-80 z-10 px-6 sm:px-20 md:px-32 lg:px-40 gap-4">
             <div
               className="h-[60%] sm:h-[80%] w-5 sm:w-10 bg-amber-800"
               data-aos="fade-down"
